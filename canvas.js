@@ -48,16 +48,6 @@ setInterval(() => {
 
     if(current == " " && (frame[y][x] != " " && frame[y][x] !== undefined)) {
         current = frame[y][x];
-        while(frame[y][x] != current) {
-            x++;
-            if(x > canvas.width) {
-                x = 0;
-                y++;
-            }
-            if(y >= canvas.height) {
-                break;
-            }
-        }
     }
 
     if(frame[y][x] != " " && frame[y][x] == current) {
